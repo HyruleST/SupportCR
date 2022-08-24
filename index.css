@@ -3,3 +3,87 @@
     --blanco: rgb(245,245,245);
     --negro: rgb(22, 22, 22);
 }
+i{
+    color: var(--negro);
+    margin: 10px;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blanco);
+}
+main{
+    max-width: 1800px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235,235,235);
+}
+header h1{
+    text-decoration: none;
+    color: rgb(75, 75, 255);
+    font-size: 140%;
+    margin: 5px 0px;
+}
+.hero{
+    color: #fff;
+    background-image: linear-gradient(0deg,rgba(73, 73, 73, 0.596),rgba(0, 0, 0, 0.658)) ,url(./img/Gabinete99.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 30px;
+}
+.presentacion em{
+    color: rgb(75, 75, 255);
+}
+.manuales-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.presen{
+    color: #fff;
+    border-radius: 24px;
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 90%;
+    margin: 10px 0px;
+}
+.presen:nth-child(2){
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.473), rgba(0,0,0,0.473)) ,url(./img/Torre_abierta.jpg);
+}
+.presen:nth-child(3){
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.473), rgba(0,0,0,0.473)) ,url(./img/Abierto.jpeg);
+}
+.presen:nth-child(4){
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.473), rgba(0,0,0,0.473)) ,url(./img/modificaciones.jpeg);
+}
+.presen:nth-child(5){
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.473), rgba(0,0,0,0.473)) ,url(./img/Ubuntu-18.04-Desktop.png);
+}
