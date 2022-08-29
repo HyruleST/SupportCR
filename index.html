@@ -8,48 +8,76 @@
     <!-- estilos -->
     <link rel="stylesheet" href="./index.css">
     <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- encabezado -->
     <header>
             <a href="./index.html"><h1>SupportCR</h1></a>
-            <i class="fa-solid fa-bars"></i>
+            <span class="menu-barras"><i class="fa-solid fa-bars"></i></span>
+            <nav class="nav-menu">
+                <h1> SupportCR</h1>
+                <ul>
+                    <li><a href="#hero">Bienvenido</a></li>
+                    <hr>
+                    <li><a href="#noso">Nosotros</a></li>
+                    <hr>
+                    <li>
+                        <a href="#manu">Manuales</a>
+                        <hr>
+                        <ul>
+                            <li><a href="./html/Guia de desensamble.html">Guía de desensamble</a></li>
+                            <hr>
+                            <li><a href="./html/Guia de ensable.html">Guía de ensamble</a></li>
+                            <hr>
+                            <li><a href="./html/Seleccion de componentes.html">Selección de componentes</a></li>
+                            <hr>
+                            <li><a href="./html/Instalacion de sistema operativo.html">Instalación de un sistema operativo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <div class="opciones"></div>
     <main>
-        <div  class="hero">
+        <div  class="hero" id="hero">
             <h2 id="hero-titule">Bienvenido</h2>
             <p id="link">https://github.com/HyruleST/SupportCR</p>
         </div>
-        <div class="presentacion">
-            <h2>Somos <em>SupportCR</em></h2>
+        <div class="presentacion" id="noso">
+            <h2 class="title">Somos <em>SupportCR</em></h2>
             <p>SupportCR es un proyecto con el objetivo de ofrecer distintos manuales que sirvan como guía para aquellos que tiene poco conocimiento respecto al desensamble y ensamble de computadoras de escritorio, instalación de un sistema operativo y la selección de componentes</p>
             <p>Los manuales los manuales los encontrara mas abajo</p>
         </div>
-        <div class="manuales-presentacion">
-            <h2>Manuales</h2>
-            <div class="presen">
-                <h2>Desensamble de computadoras de escritorio</h2>
-            </div>
-            <div class="presen">
-                <h2>Ensamble de computadoras de escritorio</h2>
-            </div>
-            <div class="presen">
-                <h2>Guía de selección de componentes</h2>
-            </div>
-            <div class="presen">
-                <h2>Guía de instalación de un sistema operativo</h2>
+        <div class="manuales-presentacion " id="manu">
+            <h2 class="title">Manuales</h2>
+            <div class="manuales">
+                <div class="presen" id="pre1">
+                    <h2>Desensamble de computadoras de escritorio</h2>
+                </div>
+                <div class="presen" id="pre2">
+                    <h2>Ensamble de computadoras de escritorio</h2>
+                </div>
+                <div class="presen" id="pre3">
+                    <h2>Guía de selección de componentes</h2>
+                </div>
+                <div class="presen" id="pre4">
+                    <h2>Guía de instalación de un sistema operativo</h2>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <hr>
-        <p>Manuales basados en la información encontrada en el curso de cisco: IT Essential</p>
+        <p >Manuales basados en la información encontrada en el curso de cisco: IT Essential</p>
         <p>Proyecto: 2022</p>
         <p>&copy;Gerardo 10-1 2022</p>
     </footer>
 
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/ee9ca241a9.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
