@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body class= "">
     <!-- encabezado -->
     <header>
             <a href="./index.html"><h1>SupportCR</h1></a>
@@ -20,12 +21,12 @@
             <nav class="nav-menu">
                 <h1> SupportCR</h1>
                 <ul>
-                    <li><a href="#hero">Bienvenido</a></li>
+                    <li><a id = "bien" href="#hero">Bienvenido</a></li>
                     <hr>
-                    <li><a href="#noso">Nosotros</a></li>
+                    <li><a id = "nosos" href="#noso">Nosotros</a></li>
                     <hr>
                     <li>
-                        <a href="#manu">Manuales</a>
+                        <a id = "manus" href="#manu">Manuales</a>
                         <hr>
                         <ul>
                             <li><a href="./html/Guia de desensamble.html">Guía de desensamble</a></li>
@@ -38,6 +39,9 @@
                         </ul>
                     </li>
                 </ul>
+                <span class="material-symbols-outlined" id = "night">
+                    light_mode
+                </span>
             </nav>
     </header>
     <div class="opciones"></div>
@@ -69,7 +73,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="foot">
         <hr>
         <p >Manuales basados en la información encontrada en el curso de cisco: IT Essential</p>
         <p>Proyecto: 2022</p>

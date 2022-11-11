@@ -1,5 +1,5 @@
 :root{
-    --verde: rgba(0, 168, 28, 0.753);
+    --verde: rgb(87, 104, 255);
     --blanco: rgb(245,245,245);
     --negro: rgb(22, 22, 22);
     --azul: rgb(0, 0, 255);
@@ -15,6 +15,7 @@ i{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     background-color: var(--blanco);
@@ -40,7 +41,7 @@ header h1{
 }
 .hero{
     color: #fff;
-    background-image: linear-gradient(0deg,var(--verde),rgba(0, 0, 0, 0.658)) ,url(./img/Gabinete99.jpg);
+    background-image: linear-gradient(0deg,var(--verde),rgba(0, 0, 0, 0.678)) ,url(./img/Gabinete99.jpg);
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -134,6 +135,9 @@ nav{
     list-style: none;
     margin: 7px;
 }
+#night{
+    margin: auto;
+}
 
 @media (min-width: 900px) {
     .hero{
@@ -160,7 +164,7 @@ nav{
         position: fixed;
         top:0;
         left: -100%;
-        width: 25%;
+        width: 30%;
         height: 100vh;
         background: rgb(235,235,235);
         display: flex;
@@ -183,4 +187,23 @@ nav{
         font-size: 3.5em;
     }
     
+}
+
+
+.dark{
+    background-color: var(--negro);
+    color:  var(--blanco);
+}
+.dark header{
+    background-color: var(--negro);
+}
+.dark i{
+    color: var(--blanco);
+}
+.dark .nav-menu{
+    background-color: var(--negro);
+}
+.dark .nav-menu a{
+    text-decoration: none;
+    color: var(--blanco);
 }
